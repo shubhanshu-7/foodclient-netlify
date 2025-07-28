@@ -6,6 +6,7 @@ const FoodItem = ({ name, description, id, imageUrl, price }) => {
   const { increaseQty, decreaseQty, quantities } = useContext(StoreContext);
 
   console.log("Image URL:",imageUrl);
+  const imageId = item.imageUrl.split("/").pop();
 
   return (
     <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
@@ -19,7 +20,7 @@ const FoodItem = ({ name, description, id, imageUrl, price }) => {
             width={60}
           /> */}
           <img 
-            src={`https://foodrestapi-production-7cdd.up.railway.app/api/foods/image/${imageUrl}`} 
+            src={`https://foodrestapi-production-7cdd.up.railway.app/api/foods/image/${imageId}`} 
             className="card-img-top" 
             alt={name} 
             style={{objectFit:"cover",height:300,width:"100%"}}
