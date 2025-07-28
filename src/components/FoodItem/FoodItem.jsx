@@ -5,8 +5,8 @@ import { StoreContext } from "../../context/StoreContext";
 const FoodItem = ({ name, description, id, imageUrl, price }) => {
   const { increaseQty, decreaseQty, quantities } = useContext(StoreContext);
 
-  console.log("Image URL:",imageUrl);
-  const imageId = item.imageUrl.split("/").pop();
+  // console.log("Image URL:",imageUrl);
+  const imageId = imageUrl.split("/").pop();
 
   return (
     <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
