@@ -28,6 +28,10 @@ const FoodDetails = () => {
     increaseQty(data.id);
     navigate("/cart");
   };
+
+  const imageId = data.imageUrl.split("/").pop();
+
+
   return (
     <section className="py-5">
       <div className="container px-4 px-lg-5 my-5">
@@ -36,7 +40,7 @@ const FoodDetails = () => {
             <img
               className="card-img-top mb-5 mb-md-0"
               //src={data.imageUrl}
-              src={`http://localhost:8080${data.imageUrl}`}
+              src={`https://foodrestapi-production-7cdd.up.railway.app/api/foods/image/${imageId}`}
               alt="..."
             />
           </div>
