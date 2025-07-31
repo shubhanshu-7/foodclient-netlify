@@ -20,7 +20,8 @@ const FoodItem = ({ name, description, id, imageUrl, price }) => {
             width={60}
           /> */}
           <img 
-            src={`https://foodrestapi-production-7cdd.up.railway.app/api/foods/image/${imageId}`} 
+            // src={`http://localhost:8080/api/foods/image/${imageId}`} 
+            src={`https://foodrestapi-production-2f01.up.railway.app/api/foods/image/${imageId}`} 
             className="card-img-top" 
             alt={name} 
             style={{objectFit:"cover",height:300,width:"100%"}}

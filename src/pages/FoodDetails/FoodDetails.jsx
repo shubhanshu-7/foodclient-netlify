@@ -37,7 +37,8 @@ const FoodDetails = () => {
             <img
               className="card-img-top mb-5 mb-md-0"
               //src={data.imageUrl}
-              src={`https://foodrestapi-production-7cdd.up.railway.app${data.imageUrl}`}
+              // src={`http://localhost:8080${data.imageUrl}`}
+              src={`https://foodrestapi-production-2f01.up.railway.app${data.imageUrl}`}
               alt="..."
             />
           </div>
